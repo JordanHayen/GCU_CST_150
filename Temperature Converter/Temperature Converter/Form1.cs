@@ -29,20 +29,20 @@ namespace Temperature_Converter
         private void Convert_Click(object sender, EventArgs e)
         {
 
-            double temperature; // a variable that stores the temperature to be converted
+            double temperatureInput; // a variable that stores the temperature to be converted
             
             // This switch determines which operation to perform depending on which was the last textbox to have been edited
             switch(activeTextBox)
             {
                 // this code block runs if the last textbox to be edited was the Fahrenheit textbox
                 case "Fahrenheit":
-                    Double.TryParse(Fahrenheit.Text, out temperature); // if the entry in the Fahrenheit textbox can be converted into a double, it is stored in the temperature variable
-                    Celsius.Text = FahrenheitToCelsius(temperature).ToString(); // converts the the entry in the Fahrenheit textbox to Celsius and displays the result in the Celsius textbox
+                    Double.TryParse(Fahrenheit.Text, out temperatureInput); // if the entry in the Fahrenheit textbox can be converted into a double, it is stored in the temperature variable
+                    Celsius.Text = FahrenheitToCelsius(temperatureInput).ToString(); // converts the the entry in the Fahrenheit textbox to Celsius and displays the result in the Celsius textbox
                     break;
                 // this code block runs if the last textbox to be edited was the Celsius textbox
                 case "Celsius":
-                    Double.TryParse(Celsius.Text, out temperature); // if the entry in the Celsius textbox can be converted into a double, it is stored in the temperature variable
-                    Fahrenheit.Text = CelsiusToFahrenheit(temperature).ToString(); // converts the the entry in the Celsius textbox to Fahrenheit and displays the result in the Fahrenheit textbox
+                    Double.TryParse(Celsius.Text, out temperatureInput); // if the entry in the Celsius textbox can be converted into a double, it is stored in the temperature variable
+                    Fahrenheit.Text = CelsiusToFahrenheit(temperatureInput).ToString(); // converts the the entry in the Celsius textbox to Fahrenheit and displays the result in the Fahrenheit textbox
                     break;
             }
         }
