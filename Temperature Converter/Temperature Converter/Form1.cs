@@ -62,13 +62,13 @@ namespace Temperature_Converter
         /* Converts a double input from Fahrenheit to Celsius */
         private double FahrenheitToCelsius(double fahrenheit)
         {
-            return (fahrenheit - 32) / 1.8;  // uses the input in the formula to convert Fahrenheit to Celsius and returns the result
+            return (fahrenheit - 32) / 1.8;  // uses the input in the formula to convert Fahrenheit to Celsius and returns the result. This formula comes from the textbook (Gaddis, 197).
         }
 
         /* Converts a double input from Celsius to Fahrenheit */
         private double CelsiusToFahrenheit(double celsius)
         {
-            return celsius * 1.8 + 32; // uses the input in the formula to convert Celsius to Fahrenheit and returns the result
+            return celsius * 1.8 + 32; // uses the input in the formula to convert Celsius to Fahrenheit and returns the result. This formula comes from the textbook (Gaddis, 197).
         }
     }
 }
