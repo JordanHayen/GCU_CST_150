@@ -36,7 +36,7 @@ namespace Temperature_Converter
             {
                 // this code block runs if the last textbox to be edited was the Fahrenheit textbox
                 case "Fahrenheit":
-                    Double.TryParse(Fahrenheit.Text, out temperatureInput); // if the entry in the Fahrenheit textbox can be converted into a double, it is stored in the temperature variable
+                    Double.TryParse(Fahrenheit.Text, out temperatureInput); // if the entry in the Fahrenheit textbox can be converted into a double, it is stored in the temperature variable. Information on the TryParse method was found in the textbook (Gaddis, 238)
                     Celsius.Text = FahrenheitToCelsius(temperatureInput).ToString(); // converts the the entry in the Fahrenheit textbox to Celsius and displays the result in the Celsius textbox
                     break;
                 // this code block runs if the last textbox to be edited was the Celsius textbox
@@ -72,3 +72,6 @@ namespace Temperature_Converter
         }
     }
 }
+
+// References:
+// Gaddis, T. (2020). Starting Out With Visual C#. Pearson.
