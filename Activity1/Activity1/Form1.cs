@@ -24,7 +24,7 @@ namespace Activity1
             double additionTerm2; // Creates a variable that will store the second addition term
             double additionOutput; // Creates a variable that will store the result of adding the two above terms
 
-            Double.TryParse(AdditionTerm1.Text, out additionTerm1); // Takes input from the textbox for the first addition term, converts it to a numeric data type and stores it in the additionTerm1 variable
+            Double.TryParse(AdditionTerm1.Text, out additionTerm1); // Takes input from the textbox for the first addition term, converts it to a numeric data type and stores it in the additionTerm1 variable. Information on the TryParse method was found in the textbook (Gaddis, 238)
             Double.TryParse(AdditionTerm2.Text, out additionTerm2); // Takes input from the textbox for the second addition term, converts it to a numeric data type and stores it in the additionTerm2 variable
             additionOutput = additionTerm1 + additionTerm2; // Sets the additionOutput variable to the sum of the addition term variables
             AdditionOutput.Text = additionOutput.ToString(); // Sets the text of the AdditionOutput label to the additionOutput variable
@@ -70,3 +70,7 @@ namespace Activity1
         }
     }
 }
+
+// References:
+// Gaddis, T. (2020). Starting Out With Visual C#. Pearson.
+// Data Types and Variables. (2021). Retrieved September 26, 2021, from Codecademy: https://www.codecademy.com/learn/learn-c-sharp/modules/learn-csharp-module-ii/cheatsheet
